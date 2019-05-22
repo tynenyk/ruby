@@ -3,11 +3,11 @@
 # Предложение raise возбуждает исключение. Отметим, что raise - не зарезервированное слово, а метод модуля Kernel.
 # (у него есть синоним fail.)
 
-raise 												# Пример 1
-raise "Произошла ошибка" 							# Пример 2
-raise ArgumentError 								# Пример 3
-raise ArgumentError, "Неверные значения" 			# Пример 4
-raise ArgumentError.new("Неверные данные") 			# Пример 5
+raise 							# Пример 1
+raise "Произошла ошибка" 				# Пример 2
+raise ArgumentError 					# Пример 3
+raise ArgumentError, "Неверные значения" 		# Пример 4
+raise ArgumentError.new("Неверные данные") 		# Пример 5
 raise ArgumentError, "Неверные данные", caller[0] 	# Пример 6
 
 # В примере 1 повторно возбуждается последнее встретившееся исключение.
